@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgeria do Jacinto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">BURGUER</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+        </nav>
+    </header>
+    <main>
+        <article class="content">
+            <div class="text-content">
+                <h3 class="headi">THE ULTIMATE</h3>
+                <h1 class="exe">Burguer Club</h1>
+                <p class="paragraf">Savor the Flavor, Join in the Club!</p>
+                <div class="images_ilustrators">
+                    <img src="Images/Hamburguer_1.jpg" alt="Hamburguer_1" class="image_ilustrator" onclick="changeImage('Images/Reference/HamburguerReference_1.png')">
+                    <img src="Images/Hamburguer_2.jpg" alt="Hamburguer_2" class="image_ilustrator" onclick="changeImage('Images/Reference/HamburguerReference_2.png')">
+                    <img src="Images/Hamburguer_3.jpg" alt="Hamburguer_3" class="image_ilustrator" onclick="changeImage('Images/Reference/HamburguerReference_3.png')">
+                    <img src="Images/Hamburguer_4.jpg" alt="Hamburguer_4" class="image_ilustrator" onclick="changeImage('Images/Reference/HamburguerReference_4.png')">
+                </div>
+            </div>
+            <img id="mainImage" src="Images/Reference/HamburguerReference_4.png" alt="Hamburguer_1" class="img_responsive">
+        </article>
+    </main>
+
+    <script>
+        function changeImage(imageSrc) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = imageSrc;
+        }
+    </script>
+</body>
+</html>

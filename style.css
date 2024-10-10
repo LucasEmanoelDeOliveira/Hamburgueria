@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(#181818, #47474c);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: auto;
+    min-width: auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title {
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5em;
+    padding: 10px;
+    margin: 10px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.319);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    animation-duration: 500ms;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: rgb(227, 227, 227);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: auto;
+}
+
+.text-content {
+    height: auto;
+    padding: 30px;
+    margin: 100px;
+    color: white;
+}
+
+.headi {
+    font-size: 2.5em;
+    margin: 10px;
+    text-align: center;
+}
+
+.exe {
+    text-align: center;
+    font-size: 5em;
+    width: 515px;
+    margin: 20px 0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.318);
+}
+
+.paragraf {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.images_ilustrators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image_ilustrator {
+    width: 100px;
+    border-radius: 5px;
+}
+
+article {
+    padding: 0;
+}
+
+.img_responsive {
+    width: 50%;
+    height: auto;
+    min-width: 10px;
+}
+
+@media (max-width: 1022px) {
+    .content {
+        flex-direction: column; /* Em telas menores, o texto e a imagem ficarão um abaixo do outro */
+        text-align: center;     /* Centraliza o conteúdo */
+    }
+
+    .img_responsive {
+        width: 90%; /* Reduz um pouco a imagem em telas muito pequenas */
+        margin: 10px 0; /* Adiciona espaço ao redor da imagem */
+    }
+}
